@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join MDR Bridge - Careers in Medical Device Consulting">
+    <title>Careers | MDR Bridge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.svg" alt="MDR Bridge Logo">
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="partner.html">Partner With Us</a></li>
+                    <li><a href="careers.html" class="active">Careers</a></li>
+                    <li><a href="contact.html" class="btn-nav">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Work With Us</h1>
+            <p>Shape the Future of MedTech Innovation</p>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers">
+        <div class="container">
+            <div class="careers-intro">
+                <p>We're building more than a consulting firm — we're building a community of talented engineers, quality experts, and innovators who share our passion for creating medical technologies that improve lives.</p>
+                <p>If you have hands-on experience in the medical device, pharmaceutical, or health IT sectors, and you're looking for meaningful, flexible project work, we'd love to hear from you.</p>
+            </div>
+
+            <div class="careers-content">
+                <div class="careers-roles">
+                    <h3>Who We Collaborate With</h3>
+                    <p>We partner with professionals who bring both expertise and creativity to the table — individuals who are excited about helping startups and established companies bring safe, effective products to market.</p>
+                    <ul class="roles-list">
+                        <li>Design & Development Engineers (mechanical, electrical, software, systems)</li>
+                        <li>Quality & Regulatory Specialists</li>
+                        <li>Validation Engineers (equipment, process, and software)</li>
+                        <li>Project Managers & Technical Program Leads</li>
+                        <li>IT Professionals with MedTech or Pharma experience (QMS, cybersecurity, digital transformation)</li>
+                        <li>Documentation & Risk Management Experts</li>
+                    </ul>
+                </div>
+
+                <div class="careers-benefits">
+                    <h3>Why Join Our Network</h3>
+                    <div class="benefits-list">
+                        <div class="benefit">
+                            <strong>Flexible Collaboration:</strong> Work on exciting projects that match your skills and availability.
+                        </div>
+                        <div class="benefit">
+                            <strong>Meaningful Impact:</strong> Support startups and companies developing technologies that help patients.
+                        </div>
+                        <div class="benefit">
+                            <strong>Professional Growth:</strong> Expand your experience and connections in the medtech ecosystem.
+                        </div>
+                        <div class="benefit">
+                            <strong>Trusted Community:</strong> Be part of a network that values integrity, expertise, and innovation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="careers-form-section">
+                <h3>Submit Your Profile</h3>
+                <p>Join our consultant network by completing the form below. We'll keep your details in our confidential database and reach out when a project matches your background.</p>
+
+                <form id="careersForm" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="career-name">Name *</label>
+                            <input type="text" id="career-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="career-email">Email *</label>
+                            <input type="email" id="career-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="career-phone">Phone (optional)</label>
+                            <input type="tel" id="career-phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="career-linkedin">LinkedIn Profile / Website</label>
+                            <input type="url" id="career-linkedin" name="linkedin">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="career-expertise">Primary Expertise Area *</label>
+                            <select id="career-expertise" name="expertise" required>
+                                <option value="">Select your expertise...</option>
+                                <option value="design">Design & Development</option>
+                                <option value="quality">Quality & Regulatory</option>
+                                <option value="validation">Validation</option>
+                                <option value="it">IT & Digital Solutions</option>
+                                <option value="pm">Project Management</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="career-experience">Years of Experience *</label>
+                            <input type="number" id="career-experience" name="experience" min="0" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Type of Work *</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="work-type" value="contract"> Contract</label>
+                            <label><input type="checkbox" name="work-type" value="part-time"> Part-Time</label>
+                            <label><input type="checkbox" name="work-type" value="full-time"> Full-Time</label>
+                            <label><input type="checkbox" name="work-type" value="project"> Project-Based</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="career-summary">Brief Summary of Experience *</label>
+                        <textarea id="career-summary" name="summary" rows="5" required></textarea>
+                    </div>
+
+                    <p class="form-note">All information is kept confidential and used solely for collaboration opportunities.</p>
+
+                    <button type="submit" class="btn btn-primary">Submit Profile</button>
+                </form>
+            </div>
+
+            <div class="careers-contact">
+                <h3>Let's Innovate Together</h3>
+                <p>We believe great things happen when experience meets passion. If you're ready to make a real impact in medtech innovation — let's connect.</p>
+                <p><strong>Email:</strong> <a href="mailto:mdrbridgeteam@gmail.com">mdrbridgeteam@gmail.com</a></p>
+                <p><strong>Phone:</strong> (904) 834-1447</p>
+                <p><strong>Location:</strong> Jacksonville, Florida (remote and on-site opportunities available)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MDR Bridge</h4>
+                    <p>Empowering MedTech innovation with nearly 20 years of industry expertise.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="partner.html">Partner With Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mailto:mdrbridgeteam@gmail.com">mdrbridgeteam@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Jacksonville, Florida<br>Serving clients nationwide</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MDR Bridge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
