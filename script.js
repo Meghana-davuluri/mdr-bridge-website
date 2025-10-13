@@ -86,7 +86,7 @@ if (contactForm) {
         const body = encodeURIComponent(emailBody);
 
         // Open default email client
-        window.location.href = `mailto:info@mdrbridge.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:mdrbridgeteam@gmail.com?subject=${subject}&body=${body}`;
 
         // Show success message
         showSuccessMessage(contactForm, 'Thank you for your inquiry! Your default email client has been opened. Please send the email to complete your submission.');
@@ -128,7 +128,7 @@ if (careersForm) {
         const body = encodeURIComponent(emailBody);
 
         // Open default email client
-        window.location.href = `mailto:careers@mdrbridge.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:mdrbridgeteam@gmail.com?subject=${subject}&body=${body}`;
 
         // Show success message
         showSuccessMessage(careersForm, 'Thank you for your interest! Your default email client has been opened. Please send the email to complete your profile submission.');
