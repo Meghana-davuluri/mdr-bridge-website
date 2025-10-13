@@ -1,0 +1,36 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#grad1)"/>
+  
+  <!-- Abstract medical/tech patterns -->
+  <g opacity="0.1">
+    <!-- Grid pattern -->
+    <path d="M0,100 L1920,100 M0,200 L1920,200 M0,300 L1920,300 M0,400 L1920,400 M0,500 L1920,500 M0,600 L1920,600 M0,700 L1920,700 M0,800 L1920,800 M0,900 L1920,900 M0,1000 L1920,1000" stroke="white" stroke-width="1"/>
+    <path d="M100,0 L100,1080 M200,0 L200,1080 M300,0 L300,1080 M400,0 L400,1080 M500,0 L500,1080 M600,0 L600,1080 M700,0 L700,1080 M800,0 L800,1080 M900,0 L900,1080 M1000,0 L1000,1080 M1100,0 L1100,1080 M1200,0 L1200,1080 M1300,0 L1300,1080 M1400,0 L1400,1080 M1500,0 L1500,1080 M1600,0 L1600,1080 M1700,0 L1700,1080 M1800,0 L1800,1080" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Circles representing medical devices/innovation -->
+  <g opacity="0.15">
+    <circle cx="300" cy="200" r="80" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="300" cy="200" r="60" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="1500" cy="800" r="100" fill="none" stroke="white" stroke-width="2"/>
+    <circle cx="1500" cy="800" r="75" fill="none" stroke="white" stroke-width="2"/>
+  </g>
+  
+  <!-- DNA helix pattern -->
+  <g opacity="0.1">
+    <path d="M100,300 Q200,250 300,300 T500,300 T700,300" stroke="white" stroke-width="3" fill="none"/>
+    <path d="M100,320 Q200,370 300,320 T500,320 T700,320" stroke="white" stroke-width="3" fill="none"/>
+    <circle cx="100" cy="300" r="5" fill="white"/>
+    <circle cx="300" cy="300" r="5" fill="white"/>
+    <circle cx="500" cy="300" r="5" fill="white"/>
+    <circle cx="700" cy="300" r="5" fill="white"/>
+  </g>
+</svg>

@@ -284,7 +284,84 @@ a:hover {
 }
 
 /* ========================================
-   Hero Section
+   Hero Section - Home Page
+   ======================================== */
+.hero-home {
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('hero-bg.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-home .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content-home {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.hero-content-home h1 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.hero-content-home .hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.8;
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-cta .btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-color: white;
+    backdrop-filter: blur(10px);
+}
+
+.hero-cta .btn-secondary:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* ========================================
+   Hero Section - Other Pages
    ======================================== */
 .hero {
     margin-top: 70px;
@@ -1126,3 +1203,109 @@ textarea:focus {
 .mb-1 { margin-bottom: var(--spacing-sm); }
 .mb-2 { margin-bottom: var(--spacing-md); }
 .mb-3 { margin-bottom: var(--spacing-lg); }
+
+/* ========================================
+   Value Proposition Section
+   ======================================== */
+.value-prop {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--bg-white);
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.value-item {
+    text-align: center;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-icon {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    display: inline-block;
+}
+
+.value-item h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.value-item p {
+    color: var(--text-secondary);
+}
+
+/* ========================================
+   Quick Links Section
+   ======================================== */
+.quick-links {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--bg-gray-light);
+}
+
+.quick-links h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.link-card {
+    background-color: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.link-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.link-card h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.link-card p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.link-arrow {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    transition: var(--transition);
+}
+
+.link-card:hover .link-arrow {
+    transform: translateX(5px);
+}
