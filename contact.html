@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -93,7 +96,7 @@
                     <div class="consultation-cta">
                         <h4>Schedule a Free Discovery Call</h4>
                         <p>We offer a complimentary 20-minute consultation to understand your project needs, challenges, and goals. You'll walk away with actionable insights — even if we don't move forward together right away.</p>
-                        <a href="mailto:mdrbridgeteam@gmail.com?subject=Discovery Call Request" class="btn btn-secondary">Book a Consultation</a>
+                        <a href="" class="btn btn-secondary calendly-link" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mdrbridgeteam'});return false;">Book a Consultation</a>
                     </div>
                 </div>
 

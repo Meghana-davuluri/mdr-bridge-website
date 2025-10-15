@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -134,7 +137,7 @@
             <div class="cta-section">
                 <h3>Ready to Get Started?</h3>
                 <p>Let's discuss which services can best support your medical device development journey.</p>
-                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+                <a href="" class="btn btn-primary calendly-link" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mdrbridgeteam'});return false;">Schedule a Consultation</a>
             </div>
         </div>
     </section>

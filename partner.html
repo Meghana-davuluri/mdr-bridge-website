@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -158,7 +161,7 @@
             <div class="partner-cta">
                 <h3>Let's Start the Conversation</h3>
                 <p>Every project begins with a discovery call — a chance for us to understand your goals, challenges, and timelines. Together, we'll create a clear plan to move your product from idea to impact.</p>
-                <a href="contact.html" class="btn btn-primary">Schedule a Free Consultation</a>
+                <a href="" class="btn btn-primary calendly-link" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mdrbridgeteam'});return false;">Schedule a Free Consultation</a>
             </div>
         </div>
     </section>
