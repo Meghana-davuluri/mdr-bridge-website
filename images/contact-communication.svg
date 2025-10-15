@@ -1,0 +1,71 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad5)"/>
+
+  <!-- Email envelope -->
+  <g transform="translate(150, 100)">
+    <!-- Envelope body -->
+    <rect x="50" y="70" width="200" height="140" rx="10" fill="white" stroke="#000d3d" stroke-width="3"/>
+
+    <!-- Envelope flap -->
+    <path d="M 50 70 L 150 140 L 250 70" fill="#00aab7" stroke="#000d3d" stroke-width="3"/>
+
+    <!-- Envelope lines (letter content) -->
+    <line x1="80" y1="130" x2="220" y2="130" stroke="#000d3d" stroke-width="2" opacity="0.3"/>
+    <line x1="80" y1="150" x2="200" y2="150" stroke="#000d3d" stroke-width="2" opacity="0.3"/>
+    <line x1="80" y1="170" x2="210" y2="170" stroke="#000d3d" stroke-width="2" opacity="0.3"/>
+  </g>
+
+  <!-- Phone icon -->
+  <g transform="translate(420, 120)">
+    <rect x="20" y="20" width="80" height="130" rx="15" fill="#000d3d" opacity="0.9"/>
+    <rect x="30" y="35" width="60" height="90" rx="5" fill="#e0f2fe"/>
+    <circle cx="60" cy="140" r="8" fill="#00aab7"/>
+
+    <!-- Signal waves -->
+    <path d="M 70 50 Q 80 50 80 60" fill="none" stroke="#00aab7" stroke-width="2"/>
+    <path d="M 75 45 Q 90 45 90 65" fill="none" stroke="#00aab7" stroke-width="2"/>
+  </g>
+
+  <!-- Calendar icon -->
+  <g transform="translate(100, 260)">
+    <rect x="20" y="30" width="100" height="90" rx="8" fill="white" stroke="#00aab7" stroke-width="3"/>
+    <rect x="20" y="30" width="100" height="25" rx="8" fill="#00aab7"/>
+
+    <!-- Calendar hooks -->
+    <line x1="40" y1="25" x2="40" y2="40" stroke="#000d3d" stroke-width="3" stroke-linecap="round"/>
+    <line x1="100" y1="25" x2="100" y2="40" stroke="#000d3d" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Calendar grid -->
+    <g stroke="#000d3d" stroke-width="1" opacity="0.4">
+      <line x1="35" y1="70" x2="105" y2="70"/>
+      <line x1="35" y1="85" x2="105" y2="85"/>
+      <line x1="35" y1="100" x2="105" y2="100"/>
+      <line x1="50" y1="60" x2="50" y2="115"/>
+      <line x1="70" y1="60" x2="70" y2="115"/>
+      <line x1="90" y1="60" x2="90" y2="115"/>
+    </g>
+
+    <!-- Highlighted date -->
+    <circle cx="70" cy="92" r="8" fill="#00aab7" opacity="0.7"/>
+  </g>
+
+  <!-- Location pin -->
+  <g transform="translate(450, 260)" opacity="0.8">
+    <path d="M 50 20 Q 30 20 30 40 Q 30 60 50 90 Q 70 60 70 40 Q 70 20 50 20 Z" fill="#000d3d"/>
+    <circle cx="50" cy="42" r="12" fill="white"/>
+  </g>
+
+  <!-- Message bubbles -->
+  <g opacity="0.5">
+    <rect x="420" y="50" width="100" height="50" rx="15" fill="#00aab7"/>
+    <polygon points="430,100 440,100 430,110" fill="#00aab7"/>
+  </g>
+</svg>
