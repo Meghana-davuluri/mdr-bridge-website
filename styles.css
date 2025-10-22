@@ -753,8 +753,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: var(--spacing-md);
-    background-color: white;
-    border: 2px solid var(--border-color);
+    background-color: var(--bg-gray-light);
     border-radius: var(--radius-md);
     transition: var(--transition);
     min-height: 120px;
@@ -763,7 +762,6 @@ a:hover {
 .company-logo:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
-    border-color: var(--primary-color);
 }
 
 .company-logo img {
@@ -773,13 +771,6 @@ a:hover {
     height: auto;
     object-fit: contain;
     margin-bottom: var(--spacing-sm);
-    filter: grayscale(100%) contrast(1.2);
-    opacity: 0.8;
-}
-
-.company-logo:hover img {
-    filter: grayscale(0%) contrast(1);
-    opacity: 1;
 }
 
 .company-name {
@@ -787,6 +778,14 @@ a:hover {
     font-weight: 600;
     color: var(--text-primary);
     text-align: center;
+}
+
+.abbott-logo {
+    background-color: var(--primary-color);
+}
+
+.abbott-logo img {
+    filter: brightness(0) invert(1);
 }
 
 .partner-benefits {
