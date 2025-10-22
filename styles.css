@@ -144,21 +144,22 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
+    gap: 0.1rem;
 }
 
 .logo img {
-    height: 45px;
+    height: 40px;
     width: auto;
     display: block;
 }
 
 .logo-tagline {
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: var(--secondary-color);
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: var(--text-secondary);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    opacity: 0.8;
 }
 
 .nav-menu {
