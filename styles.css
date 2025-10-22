@@ -142,13 +142,23 @@ a:hover {
     color: var(--primary-color);
     text-decoration: none;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
 }
 
 .logo img {
     height: 45px;
     width: auto;
     display: block;
+}
+
+.logo-tagline {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .nav-menu {
