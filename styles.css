@@ -781,7 +781,7 @@ a:hover {
 }
 
 .abbott-logo img {
-    filter: invert(22%) sepia(93%) saturate(2498%) hue-rotate(197deg) brightness(93%) contrast(101);
+    filter: brightness(0.3) sepia(1) hue-rotate(180deg) saturate(5);
 }
 
 .partner-benefits {
