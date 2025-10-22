@@ -665,10 +665,7 @@ a:hover {
 }
 
 .why-mdr-bridge {
-    background-color: var(--bg-gray-light);
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-lg);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-xxl);
 }
 
 .why-mdr-bridge h2 {
@@ -677,40 +674,59 @@ a:hover {
     margin-bottom: var(--spacing-md);
 }
 
-.why-mdr-bridge h3 {
-    color: var(--primary-color);
-    margin-top: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
-    font-size: 1.5rem;
-}
-
-.value-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.value-list li {
-    padding: var(--spacing-sm) 0;
-    padding-left: 2.5rem;
-    position: relative;
-    color: var(--text-secondary);
+.intro-text {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-md);
+    font-size: 1.1rem;
     line-height: 1.8;
 }
 
-.value-list .check {
-    position: absolute;
-    left: 0;
-    color: var(--success-color);
+.why-mdr-bridge h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.75rem;
+}
+
+.value-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.value-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.value-card h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
     font-size: 1.25rem;
-    font-weight: 700;
+}
+
+.value-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0;
 }
 
 .partnership-model {
-    background-color: white;
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-lg);
-    margin-bottom: var(--spacing-xl);
-    border: 2px solid var(--border-color);
+    margin-bottom: var(--spacing-xxl);
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-gray-light);
 }
 
 .partnership-model h2 {
@@ -722,45 +738,58 @@ a:hover {
 .model-intro {
     text-align: center;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    font-size: 1.1rem;
 }
 
-.model-table {
+.model-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.model-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
     display: flex;
     flex-direction: column;
-    gap: 0;
-    border: 2px solid var(--border-color);
-    border-radius: var(--radius-md);
-    overflow: hidden;
+    gap: var(--spacing-md);
+    border-top: 5px solid var(--primary-color);
 }
 
-.model-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1.5fr;
-    border-bottom: 1px solid var(--border-color);
+.model-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
 }
 
-.model-row:last-child {
-    border-bottom: none;
-}
-
-.model-header {
-    background-color: var(--primary-color);
-    color: white;
+.model-badge {
+    font-size: 1.25rem;
     font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
 }
 
-.model-cell {
-    padding: var(--spacing-md);
-    border-right: 1px solid var(--border-color);
+.model-best-for {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: var(--spacing-sm);
 }
 
-.model-cell:last-child {
-    border-right: none;
-}
-
-.model-row:not(.model-header):hover {
-    background-color: var(--bg-gray-light);
+.model-engagement {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 .collaboration-process {
@@ -1392,21 +1421,12 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
-    .model-row {
+    .value-cards {
         grid-template-columns: 1fr;
     }
 
-    .model-cell {
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
-    }
-
-    .model-cell:last-child {
-        border-bottom: none;
-    }
-
-    .model-row:not(:last-child) .model-cell:last-child {
-        border-bottom: 1px solid var(--border-color);
+    .model-cards {
+        grid-template-columns: 1fr;
     }
 
     .process-steps {
