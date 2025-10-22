@@ -330,8 +330,21 @@ a:hover {
 
 .hero-content-home h1 {
     color: white;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.hero-content-home .tagline {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(0,170,183,0.9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-content-home .hero-subtitle {
