@@ -664,6 +664,168 @@ a:hover {
     background-color: var(--bg-white);
 }
 
+.why-mdr-bridge {
+    background-color: var(--bg-gray-light);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.why-mdr-bridge h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.why-mdr-bridge h3 {
+    color: var(--primary-color);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+}
+
+.value-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.value-list li {
+    padding: var(--spacing-sm) 0;
+    padding-left: 2.5rem;
+    position: relative;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.value-list .check {
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.partnership-model {
+    background-color: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+    border: 2px solid var(--border-color);
+}
+
+.partnership-model h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.model-intro {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.model-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.model-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.model-row:last-child {
+    border-bottom: none;
+}
+
+.model-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+}
+
+.model-cell {
+    padding: var(--spacing-md);
+    border-right: 1px solid var(--border-color);
+}
+
+.model-cell:last-child {
+    border-right: none;
+}
+
+.model-row:not(.model-header):hover {
+    background-color: var(--bg-gray-light);
+}
+
+.collaboration-process {
+    background-color: var(--bg-gray-light);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.collaboration-process h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.process-step {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    position: relative;
+    transition: var(--transition);
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto var(--spacing-md);
+}
+
+.process-step h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.process-step p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.partner-services h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
 .partner-intro {
     max-width: 800px;
     margin: 0 auto var(--spacing-xl);
@@ -1228,6 +1390,31 @@ a:hover {
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .model-row {
+        grid-template-columns: 1fr;
+    }
+
+    .model-cell {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .model-cell:last-child {
+        border-bottom: none;
+    }
+
+    .model-row:not(:last-child) .model-cell:last-child {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .companies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
 
