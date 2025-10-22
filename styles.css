@@ -718,6 +718,68 @@ a:hover {
     font-weight: 700;
 }
 
+.partner-experience {
+    background-color: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+    border: 2px solid var(--border-color);
+}
+
+.partner-experience h3 {
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.experience-intro {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.company-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background-color: var(--bg-gray-light);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    min-height: 120px;
+}
+
+.company-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.company-logo img {
+    max-width: 120px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: var(--spacing-sm);
+}
+
+.company-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+}
+
 .partner-benefits {
     background-color: var(--bg-gray-light);
     padding: var(--spacing-xl);
