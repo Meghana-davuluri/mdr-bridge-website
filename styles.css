@@ -780,12 +780,8 @@ a:hover {
     text-align: center;
 }
 
-.abbott-logo {
-    background-color: var(--primary-color);
-}
-
 .abbott-logo img {
-    filter: brightness(0) invert(1);
+    filter: brightness(0.3) sepia(1) hue-rotate(180deg) saturate(5);
 }
 
 .partner-benefits {
