@@ -1619,3 +1619,74 @@ textarea:focus {
 .link-card:hover .link-arrow {
     transform: translateX(5px);
 }
+
+/* ========================================
+   Image Sections
+   ======================================== */
+
+/* Service page image */
+.service-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-lg) auto;
+    display: block;
+    box-shadow: var(--shadow-md);
+}
+
+/* About page section image */
+.section-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-lg) auto var(--spacing-xl);
+    display: block;
+    box-shadow: var(--shadow-md);
+}
+
+/* Home page mission section */
+.mission-section {
+    padding: var(--spacing-xl) 0;
+    background-color: white;
+}
+
+.mission-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.mission-text h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    font-size: 2rem;
+}
+
+.mission-text p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mission-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .service-image,
+    .section-image {
+        max-width: 100%;
+    }
+}
