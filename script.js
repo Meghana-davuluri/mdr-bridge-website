@@ -326,7 +326,7 @@ backToTopButton.style.cssText = `
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    background: linear-gradient(135deg, #000d3d, #00aab7);
     color: white;
     border: none;
     font-size: 1.5rem;
