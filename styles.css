@@ -313,7 +313,7 @@ a:hover {
 
 .page-header-partner {
     background: linear-gradient(135deg, rgba(0, 13, 61, 0.5) 0%, rgba(0, 170, 183, 0.5) 100%),
-                url('partnership-handshake.jpg') center 50% / 150% auto no-repeat;
+                url('partnership-handshake.jpg') center 50% / 250% auto no-repeat;
     min-height: 350px;
     display: flex;
     align-items: center;
