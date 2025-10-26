@@ -296,7 +296,7 @@ a:hover {
 
 /* Page header with background images */
 .page-header-about {
-    background: linear-gradient(135deg, rgba(0, 13, 61, 0.85) 0%, rgba(0, 170, 183, 0.85) 100%),
+    background: linear-gradient(135deg, rgba(0, 13, 61, 0.5) 0%, rgba(0, 170, 183, 0.5) 100%),
                 url('medical-device-component.jpg') center center / cover no-repeat;
     min-height: 350px;
     display: flex;
@@ -304,7 +304,7 @@ a:hover {
 }
 
 .page-header-services {
-    background: linear-gradient(135deg, rgba(0, 13, 61, 0.85) 0%, rgba(0, 170, 183, 0.85) 100%),
+    background: linear-gradient(135deg, rgba(0, 13, 61, 0.5) 0%, rgba(0, 170, 183, 0.5) 100%),
                 url('medical-dashboard.jpg') center center / cover no-repeat;
     min-height: 350px;
     display: flex;
@@ -317,7 +317,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 13, 61, 0.7) 0%, rgba(0, 170, 183, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(0, 13, 61, 0.3) 0%, rgba(0, 170, 183, 0.3) 100%);
     z-index: 0;
 }
 
