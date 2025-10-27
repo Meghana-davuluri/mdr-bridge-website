@@ -628,7 +628,7 @@ a:hover {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
     margin-top: var(--spacing-xl);
 }
@@ -923,7 +923,7 @@ a:hover {
 
 .partner-services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
@@ -1104,7 +1104,7 @@ a:hover {
 
 .careers-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
 }
@@ -1213,7 +1213,7 @@ a:hover {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-xl);
 }
 
@@ -1291,7 +1291,7 @@ a:hover {
 
 .form-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--spacing-md);
 }
 
@@ -1454,6 +1454,22 @@ a:hover {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 
+    /* Page headers - reduce height on mobile */
+    .page-header,
+    .page-header-about,
+    .page-header-services,
+    .page-header-partner,
+    .page-header-careers {
+        min-height: 250px;
+        padding: var(--spacing-lg) 0;
+    }
+
+    .mission-section {
+        min-height: 300px;
+        padding: var(--spacing-lg) 0;
+    }
+
+    /* Hero sections */
     .hero-cta {
         flex-direction: column;
     }
@@ -1462,10 +1478,12 @@ a:hover {
         width: 100%;
     }
 
+    /* Grid layouts */
     .services-grid,
     .partner-services,
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
     .about-grid,
@@ -1485,6 +1503,10 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
     .model-cards {
         grid-template-columns: 1fr;
     }
@@ -1495,6 +1517,29 @@ a:hover {
 
     .companies-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Service cards */
+    .service-card {
+        padding: var(--spacing-md);
+    }
+
+    .service-card h3 {
+        padding-right: 50px;
+    }
+
+    /* Contact info */
+    .contact-item {
+        flex-direction: column;
+        gap: var(--spacing-sm);
     }
 }
 
@@ -1508,10 +1553,67 @@ a:hover {
         padding: 0 var(--spacing-sm);
     }
 
+    /* Further reduce page header heights */
+    .page-header,
+    .page-header-about,
+    .page-header-services,
+    .page-header-partner,
+    .page-header-careers {
+        min-height: 200px;
+        padding: var(--spacing-md) 0;
+    }
+
+    .mission-section {
+        min-height: 250px;
+    }
+
+    /* Form improvements */
     .checkbox-group,
     .radio-group {
         flex-direction: column;
         gap: var(--spacing-sm);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+
+    /* Card adjustments */
+    .service-card,
+    .value-card,
+    .model-card,
+    .partner-service {
+        padding: var(--spacing-md);
+    }
+
+    .careers-form-section,
+    .contact-form-wrapper {
+        padding: var(--spacing-md);
+    }
+
+    /* Logo sizing */
+    .logo img {
+        height: 35px;
+    }
+
+    /* Smaller service numbers */
+    .service-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .service-card h3 {
+        padding-right: 45px;
+    }
+
+    /* Step numbers */
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.25rem;
     }
 
     .benefits-grid {
